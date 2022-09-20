@@ -8,7 +8,7 @@ import {
   FilterBy,
 } from "./Header.styled";
 
-import { ReactComponent as DownArrow } from "../../Assets/icons/filter-by-status.svg";
+import { ReactComponent as ArrowDown } from "../../Assets/icon-arrow-down.svg";
 const Header = () => {
   return (
     <StyledHeader>
@@ -18,7 +18,7 @@ const Header = () => {
       </ContentContainer>
       <StyledDropDown>
         <FilterBy>Filter by status</FilterBy>
-        <DownArrow />
+        <ArrowDown />
       </StyledDropDown>
       <ContentContainer>
         <StyledButton>New Invoice</StyledButton>

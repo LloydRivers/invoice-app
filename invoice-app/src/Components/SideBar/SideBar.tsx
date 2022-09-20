@@ -1,5 +1,5 @@
 import { StyledSideBar, SVGContainer } from "./SideBar.styled";
-import { ReactComponent as Logo } from "../../Assets/icons/logo.svg";
+import { ReactComponent as Logo } from "../../Assets/logo.svg";
 
 const SideBar = () => {
   return (

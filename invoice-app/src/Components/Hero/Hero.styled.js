@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHero = styled.main`
-  border: 1px solid red;
-`;
+export const StyledHero = styled.main``;
 
 export const HeroContentContainer = styled.div``;
 
