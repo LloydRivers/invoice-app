@@ -1,7 +1,8 @@
-import React from "react";
+import { ThemeProvider } from "styled-components";
+import Routing from "./Routes/Routing";
 
 function App() {
-  return <div className="App">Hello world</div>;
+  return <Routing />;
 }
 
 export default App;
