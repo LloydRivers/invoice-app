@@ -1,7 +1,12 @@
-import React from "react";
-
+import { Hero, SideBar } from "Components";
+import { StyledHome } from "./Home.styled";
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <StyledHome>
+      <SideBar />
+      <Hero />
+    </StyledHome>
+  );
 };
 
 export default Home;
