@@ -8,6 +8,7 @@ import "App.css";
 
 function App() {
   const isLightTheme = useSelector(selectIsLightTheme);
+
   return (
     <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
       <Routing />

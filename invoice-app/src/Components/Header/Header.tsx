@@ -6,9 +6,11 @@ import {
   Description,
   StyledButton,
   FilterBy,
+  PlusIconContainer,
 } from "./Header.styled";
 
 import { ReactComponent as ArrowDown } from "../../Assets/icon-arrow-down.svg";
+import { ReactComponent as IconPlus } from "../../Assets/icon-plus.svg";
 const Header = () => {
   return (
     <StyledHeader>
@@ -16,13 +18,21 @@ const Header = () => {
         <Title>Invoices</Title>
         <Description>No invoice...</Description>
       </ContentContainer>
-      <StyledDropDown>
-        <FilterBy>Filter by status</FilterBy>
-        <ArrowDown />
-      </StyledDropDown>
-      <ContentContainer>
-        <StyledButton>New Invoice</StyledButton>
-      </ContentContainer>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <StyledDropDown>
+          <FilterBy>Filter by status</FilterBy>
+          <ArrowDown />
+        </StyledDropDown>
+        <ContentContainer>
+          <StyledButton>
+            <PlusIconContainer>
+              <IconPlus />
+            </PlusIconContainer>
+
+            <span style={{ padding: "0 5px" }}>New Invoice</span>
+          </StyledButton>
+        </ContentContainer>
+      </div>
     </StyledHeader>
   );
 };

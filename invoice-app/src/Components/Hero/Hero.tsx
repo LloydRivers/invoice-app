@@ -5,13 +5,11 @@ const Hero = () => {
     <StyledHero>
       <Header />
       <HeroContentContainer>
-        <Row>
-          <Column />
-          <Column />
-          <Column />
-          <Column />
-          <Column />
-        </Row>
+        {/* <Row>
+          <Column> Temp data</Column>
+          <Column> Temp data</Column>
+          <Column> Temp data</Column>
+        </Row> */}
       </HeroContentContainer>
     </StyledHero>
   );
