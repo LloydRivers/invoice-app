@@ -7,9 +7,17 @@ import {
 } from "./SideBar.styled";
 import { ReactComponent as Logo } from "../../Assets/logo.svg";
 import { ReactComponent as Moon } from "../../Assets/icon-moon.svg";
+import { ReactComponent as Sun } from "../../Assets/icon-sun.svg";
 import ImageAvatar from "../../Assets/image-avatar.jpg";
+import {
+  selectIsLightTheme,
+  toggleTheme,
+} from "../../features/slices/themeSlice/themeSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 const SideBar = () => {
+  const isLightTheme = useSelector(selectIsLightTheme);
+  const dispatch = useDispatch();
   return (
     <StyledSideBar>
       <SVGContainer>
@@ -18,7 +26,11 @@ const SideBar = () => {
 
       <IconContainer>
         <div>
-          <Moon />
+          {isLightTheme ? (
+            <Moon onClick={() => dispatch(toggleTheme())} />
+          ) : (
+            <Sun onClick={() => dispatch(toggleTheme())} />
+          )}
         </div>
 
         <ImageContainer>

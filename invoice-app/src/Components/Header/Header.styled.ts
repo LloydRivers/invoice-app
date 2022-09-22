@@ -64,4 +64,7 @@ export const StyledButton = styled.button`
   path {
     fill: ${({ theme }) => theme.buttonBG};
   }
+  span {
+    color: #fff;
+  }
 `;
