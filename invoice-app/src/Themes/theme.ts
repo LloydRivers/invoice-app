@@ -5,6 +5,7 @@ export const lightTheme = {
   heroBG: "#F8F8FB",
   rowBG: "#FFFFFF",
   hash: "#7E88C3",
+  nameColor: "#858BB2",
   buttonBG: "#7C5DFA",
   textDark: "#000000",
   subHeading: "#888EB0",
