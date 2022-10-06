@@ -11,7 +11,7 @@ import {
 
 import { ReactComponent as ArrowDown } from "../../Assets/icon-arrow-down.svg";
 import { ReactComponent as IconPlus } from "../../Assets/icon-plus.svg";
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <StyledHeader>
       <ContentContainer>

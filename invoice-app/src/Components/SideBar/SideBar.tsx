@@ -15,7 +15,7 @@ import {
 } from "../../features/slices/themeSlice/themeSlice";
 import { useSelector, useDispatch } from "react-redux";
 
-const SideBar = () => {
+const SideBar: React.FC = () => {
   const isLightTheme = useSelector(selectIsLightTheme);
   const dispatch = useDispatch();
   return (

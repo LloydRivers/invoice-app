@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import themeSlice from "../features/slices/themeSlice/themeSlice";
+import themeSlice from "features/slices/themeSlice/themeSlice";
+import invoiceReducer from "features/slices/invoice/invoiceSlice";
 
 export const store = configureStore({
   reducer: {
     theme: themeSlice,
+    invoice: invoiceReducer,
   },
 });
 

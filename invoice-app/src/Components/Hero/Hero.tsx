@@ -3,11 +3,11 @@ import themeSlice from "features/slices/themeSlice/themeSlice";
 
 import { ReactComponent as ArrowRight } from "../../Assets/icon-arrow-right.svg";
 import { StyledHero, HeroContentContainer } from "./Hero.styled";
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <StyledHero>
-      <Header />
       <HeroContentContainer>
+        <Header />
         <InvoiceRow
           invoice={{
             id: 1,

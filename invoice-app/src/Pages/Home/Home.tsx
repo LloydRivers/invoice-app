@@ -1,6 +1,6 @@
 import { Hero, SideBar } from "Components";
 import { StyledHome } from "./Home.styled";
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <StyledHome>
       <SideBar />

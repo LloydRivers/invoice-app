@@ -12,6 +12,8 @@ export const lightTheme = {
   textGreen: "#33D69F",
   textOrange: "#FF8F00",
   textWhiteSmoke: "#000",
+  placeHolder: "#9E9FA2",
+  inputBorder: "#DFE3FA",
 };
 
 export const darkTheme = {
@@ -26,4 +28,6 @@ export const darkTheme = {
   textGreen: "#33D69F",
   textOrange: "#FF8F00",
   textWhiteSmoke: "#DFE3FA",
+  placeHolder: "#fff",
+  inputBorder: "#252945",
 };
