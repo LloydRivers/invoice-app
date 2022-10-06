@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.div`
-  padding: 0 240px;
   background-color: ${(props) => props.theme.heroBG};
   margin: 0 auto;
 `;
 export const Form = styled.form`
-  border: 2px solid red;
   padding: 56px;
+  overflow-y: scroll;
 `;
 export const FormTitle = styled.h1`
   color: ${(props) => props.theme.textDark};

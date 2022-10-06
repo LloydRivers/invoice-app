@@ -11,7 +11,15 @@ import {
 
 import { ReactComponent as ArrowDown } from "../../Assets/icon-arrow-down.svg";
 import { ReactComponent as IconPlus } from "../../Assets/icon-plus.svg";
-const Header: React.FC = () => {
+
+interface HeaderProps {
+  isMenuActive: boolean;
+  activeMenu: (isMenuActive: boolean) => void;
+}
+const Header: React.FC<HeaderProps> = ({
+  isMenuActive,
+  activeMenu,
+}): JSX.Element => {
   return (
     <StyledHeader>
       <ContentContainer>
@@ -29,7 +37,12 @@ const Header: React.FC = () => {
               <IconPlus />
             </PlusIconContainer>
 
-            <span style={{ padding: "0 5px" }}>New Invoice</span>
+            <span
+              onClick={() => activeMenu(!isMenuActive)}
+              style={{ padding: "0 5px" }}
+            >
+              New Invoice
+            </span>
           </StyledButton>
         </ContentContainer>
       </div>
